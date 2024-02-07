@@ -1,11 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import BloodProject from "../assets/images/BloodProject.JPG";
-import vtsweb from "../assets/images/vtsweb.JPG";
-import bossres from "../assets/images/bossres.JPG";
-import aggloToys from "../assets/images/aggloToys.JPG";
-import project5 from "../assets/images/project-5.png";
-import project_person from "../assets/images/project_person1.png";
+import project1 from "../assets/images/BloodProject.jpg";
+import project2 from "../assets/images/vtsweb.jpg";
+import project3 from "../assets/images/bossres.jpg";
+import project4 from "../assets/images/aggloToys.jpg";
+import project5 from "../assets/images/423568326_764175218931908_2293458353246363854_n.jpg";
+
+
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -13,30 +14,38 @@ import { Pagination, Autoplay } from "swiper";
 const Project = () => {
   const projects = [
     {
-      img: BloodProject,
-      name: "Movie App",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://myreactflix.netlify.app",
+      img:  project1,
+      name: "Blood Donation Project",
+      github_link: "https://github.com/MahmudulMahi",
+      live_link: "https://blood-donation-frontend-visionarytechsolution.vercel.app/",
     },
     {
-      img: vtsweb,
-      name: "Job search Web App",
-      github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
-      live_link: "https://myjobsearch.netlify.app",
+      img: project2,
+      name: "Company website",
+      github_link: "https://github.com/MahmudulMahi/-company-website",
+      live_link: "https://vts-web-beta.vercel.app/",
     },
     {
-      img: bossres,
-      name: "Highking",
-      github_link: "https://github.com/Sridhar-C-25/highking",
-      live_link: "https://highking01.netlify.app",
+      img: project3,
+      name: "Restaurant Management System",
+      github_link: "https://github.com/MahmudulMahi/restaurant-client",
+      live_link: "https://bistro-boss-restaurant-c3449.web.app/",
     },
     {
-      img: aggloToys,
-      name: "React Nav",
+      img: project4,
+      name: "Agglo Toys ecommerce website",
       github_link:
-        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
-      live_link: "https://reacttailwindnavbar.netlify.app",
+        "https://github.com/MahmudulMahi/agglo-toys-client",
+      live_link: "https://agglos-toys.web.app/",
     },
+    {
+      img: project5,
+      name: "Car Management System",
+      github_link:
+        "https://github.com/MahmudulMahi/car-doctor-clients1",
+      live_link: "https://beautiful-squirrel-0129a6.netlify.app/",
+    }
+
 
   ];
   
@@ -46,7 +55,7 @@ const Project = () => {
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Projects</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My awesome works</p>
+        <p className="text-gray-400 mt-3 text-lg">My  works</p>
       </div>
       <br />
       <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
@@ -56,7 +65,7 @@ const Project = () => {
             spaceBetween={20}
             breakpoints={{
               768: {
-                slidesPerView: 3,
+                slidesPerView: 2,
               },
             }}
             loop={true}
@@ -70,8 +79,10 @@ const Project = () => {
           >
             {projects.map((project_info, i) => (
               <SwiperSlide key={i}>
-                <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
-                  <img src={project_info.img} alt="" className="rounded-lg" />
+                <div className="w-full h-[450px] p-4 bg-slate-700 rounded-xl">
+                <div className="">
+                <img  src={project_info.img} alt="" className="rounded-lg h-[300px]" />
+                </div>
                   <h3 className="text-xl my-4">{project_info.name}</h3>
                   <div className="flex gap-3">
                     <a
@@ -88,6 +99,7 @@ const Project = () => {
                     >
                       Live Demo
                     </a>
+              
                
                   </div>
                 </div>

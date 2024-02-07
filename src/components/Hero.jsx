@@ -10,15 +10,15 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex py-10 md:flex-row flex-col items-center"
+      className="md:min-h-screen flex py-10 md:flex-col lg:flex-row  flex-col items-center "
     >
-      <div className="flex-1 flex items-center justify-center  ">
-        <img src={hero} alt="" className="md:w-[500px] md:h-[500px]   rounded-full" />
+      <div className="flex-1 flex items-center justify-center mt-10 md:mt-0 pb-5 ">
+        <img src={hero} alt="" className="md:w-[500px] md:h-[500px] w-[250px] h-[250px] rounded-full" />
       </div>
       <div className="flex-1">
         <div className="md:text-left text-center">
           <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold">
-            <span className="text-cyan-600 md:text-6xl text-5xl">
+            <span className="text-cyan-600 md:text-6xl text-5xl ">
               Hello!
               <br />
             </span>
@@ -29,7 +29,7 @@ const Hero = () => {
           </h4>
 
           <button className="btn-primary mt-8">Contact Me</button>
-          <div className="flex gap-5">
+          <div className="flex gap-5 justify-center md:justify-start ">
                 <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5 ">
 
               <div

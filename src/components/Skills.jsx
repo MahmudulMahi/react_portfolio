@@ -13,7 +13,7 @@ const Skills = () => {
           My <span className="text-cyan-600">Skills</span>
         </h3>
         <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
-        <div className="grid grid-cols-4 justify-items-center items-center justify-center mt-12 gap-10 flex-wrap">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center items-center justify-center mt-12 gap-24 flex-wrap">
          
             <div             
               className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"

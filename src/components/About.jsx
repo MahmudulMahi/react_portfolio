@@ -17,7 +17,11 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-300 my-3 ">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-              I'm a passionate MERN Stack Web Developer. I am a self-motivated and responsible person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines. I've been on a continuous learning adventure, exploring new tools and frameworks to enhance my skills.
+                I’m a Tech Enthusiast. I am a mature team worker and
+                adaptable to all challenging situations. I have enriched
+                myself with various skills like Problem Solving and Web
+                Develop.I’ll try to stay up to date on new Technologies
+                and learn them
               </p>
               <div className="flex mt-10 items-center gap-7 justify-center">
                 {info.map((content) => (
@@ -32,14 +36,14 @@ const About = () => {
               </div>
               <br />
               <br />
-             <div className="flex justify-center">
-             <a href="./src\assets\Cv_For_Mahmudul.pdf" download>
-                <button className="btn-primary">Download CV</button>
-              </a>
-             </div>
+              <div className="flex justify-center">
+                <a href="./src\assets\Cv_For_Mahmudul.pdf" download>
+                  <button className="btn-primary">Download CV</button>
+                </a>
+              </div>
             </div>
           </div>
-       
+
         </div>
       </div>
     </section>
